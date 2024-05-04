@@ -2,7 +2,7 @@
 
 public class BaseRepository
 {
-    protected const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=;Database=AppProgramS2024";
+    protected const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=AppProgramS2024";
 
     protected NpgsqlDataReader? GetData(NpgsqlConnection conn, NpgsqlCommand cmd)
     {

@@ -6,7 +6,7 @@ using Web_API.Entities; // Make sure to include this namespace for the Employer 
 
 public class EmployeRepository : BaseRepository, IEmployerRepository
 {
-    private const string ConnectionString = "Host=localhost:5432;Username=mylogin;Password=mypass;Database=ExamDatabase";
+    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
     // Get a list of employers
     public List<Employer> GetEmployers()
     {
@@ -22,11 +22,12 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
             {
                 while (data.Read())
                 {
+                   
                     var employer = new Employer
                     {
                         Id = Convert.ToInt32(data["id"]),
-                        FirstName = data["firstname"].ToString(),
-                        LastName = data["lastname"].ToString(),
+                        FirstName = data["first_name"].ToString(),
+                        LastName = data["last_name"].ToString(),
                         Organisation = data["organisation"].ToString(),
                         Email = data["email"].ToString()
                     };
