@@ -4,11 +4,11 @@ using Npgsql;
 using NpgsqlTypes;
 using Web_API.Entities; // Make sure to include this namespace for the Employer model
 
-public class EmployeRepository : BaseRepository
+public class EmployeRepository : BaseRepository, IEmployerRepository
 {
     private const string ConnectionString = "Host=localhost:5432;Username=mylogin;Password=mypass;Database=ExamDatabase";
     // Get a list of employers
-    public List<Employer> Getemployers()
+    public List<Employer> GetEmployers()
     {
         var employers = new List<Employer>();
         using (var dbConn = new NpgsqlConnection(ConnectionString))
@@ -42,7 +42,7 @@ public class EmployeRepository : BaseRepository
     }
 
     // Get a single employer by Id
-    public Employer GetemployerById(int id)
+    public Employer GetEmployerById(int id)
     {
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
@@ -70,7 +70,7 @@ public class EmployeRepository : BaseRepository
     }
 
     // Add a new employer
-    public bool Insertemployer(Employer e)
+    public bool InsertEmployer(Employer employer)
     {
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
@@ -87,7 +87,7 @@ public class EmployeRepository : BaseRepository
     }
 
     // Update an employer
-    public bool Updateemployer(Employer e)
+    public bool UpdateEmployer(Employer employer)
     {
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
@@ -105,7 +105,7 @@ public class EmployeRepository : BaseRepository
     }
 
     // Delete an employer
-    public bool Deleteemployer(int id)
+    public bool DeleteEmployer(int id)
     {
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {

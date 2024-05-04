@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D7V4T4RIUutTKRpxU3r4p7A5KpqsEVEb1x2NV8lgAtw9DBQo2HaZ4yJ3oXlhopTRpUfeHKBvukywf8++JZ1Lcg==",
+  "dgSpecHash": "ed23qXzlnW4KelChTujtKyo+d8xR1ZzfsXTxu80r6gL5/nJ1vcRv0yla2HtY1ZuYshcPjcD8R7U3E/zxvHZeAQ==",
   "success": true,
   "projectFilePath": "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,11 @@
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
