@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "vJiRifvI2vrbHsPEsipqlZSie4RwlH+fWm6ItGuxBUGbE87ThppcobUj1mwNTVNwENnnb3+6xpZrar/j6s0bxg==",
+  "dgSpecHash": "D7V4T4RIUutTKRpxU3r4p7A5KpqsEVEb1x2NV8lgAtw9DBQo2HaZ4yJ3oXlhopTRpUfeHKBvukywf8++JZ1Lcg==",
   "success": true,
   "projectFilePath": "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
