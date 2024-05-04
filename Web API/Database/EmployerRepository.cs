@@ -77,10 +77,10 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
             var cmd = dbConn.CreateCommand();
             cmd.CommandText = @"insert into employer(firstname, lastname, organisation, email) values(@firstname, @lastname, @organisation, @email)";
 
-            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, e.FirstName);
-            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, e.LastName);
-            cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, e.Organisation);
-            cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, e.Email);
+            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, employer.FirstName);
+            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, employer.LastName);
+            cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, employer.Organisation);
+            cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, employer.Email);
 
             return InsertData(dbConn, cmd);
         }
@@ -94,11 +94,11 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
             var cmd = dbConn.CreateCommand();
             cmd.CommandText = @"update employer set firstname=@firstname, lastname=@lastname, organisation=@organisation, email=@email where id=@id";
 
-            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, e.FirstName);
-            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, e.LastName);
-            cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, e.Organisation);
-            cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, e.Email);
-            cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, e.Id);
+            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, employer.FirstName);
+            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, employer.LastName);
+            cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, employer.Organisation);
+            cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, employer.Email);
+            cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, employer.Id);
 
             return UpdateData(dbConn, cmd);
         }
