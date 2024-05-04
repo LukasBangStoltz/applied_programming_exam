@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\API\\applied_programming_exam\\Web API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\database\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:database\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\controllers\\employercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:controllers\\employercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\middleware\\headerauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:middleware\\headerauthenticationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\database\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|solutionrelative:database\\employerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38D42EE8-65B5-49F2-9550-2D566A07C855}|Web API.csproj|c:\\api\\applied_programming_exam\\web api\\database\\iemployerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,17 +49,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployerRepository.cs",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Database\\EmployerRepository.cs",
               "RelativeDocumentMoniker": "Database\\EmployerRepository.cs",
               "ToolTip": "C:\\API\\applied_programming_exam\\Web API\\Database\\EmployerRepository.cs",
               "RelativeToolTip": "Database\\EmployerRepository.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAMwHEAAABJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T10:47:25.278Z",
               "IsPinned": true,
@@ -76,18 +80,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "HeaderAuthenticationMiddleware.cs",
+              "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Middleware\\HeaderAuthenticationMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\HeaderAuthenticationMiddleware.cs",
+              "ToolTip": "C:\\API\\applied_programming_exam\\Web API\\Middleware\\HeaderAuthenticationMiddleware.cs",
+              "RelativeToolTip": "Middleware\\HeaderAuthenticationMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T12:15:43.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\API\\applied_programming_exam\\Web API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T11:30:14.044Z"
+              "WhenOpened": "2024-05-04T11:30:14.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IEmployerRepository.cs",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Database\\IEmployerRepository.cs",
               "RelativeDocumentMoniker": "Database\\IEmployerRepository.cs",
@@ -99,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Microsoft.PackageDependencyResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.202\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
@@ -111,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Web API.csproj",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj",
               "RelativeDocumentMoniker": "Web API.csproj",
@@ -129,14 +147,14 @@
               "RelativeDocumentMoniker": "Controllers\\EmployerController.cs",
               "ToolTip": "C:\\API\\applied_programming_exam\\Web API\\Controllers\\EmployerController.cs",
               "RelativeToolTip": "Controllers\\EmployerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHYAAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAIwE8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T11:26:56.35Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Database\\BaseRepository.cs",
               "RelativeDocumentMoniker": "Database\\BaseRepository.cs",
@@ -148,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -160,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Employer.cs",
               "DocumentMoniker": "C:\\API\\applied_programming_exam\\Web API\\Entities\\Employer.cs",
               "RelativeDocumentMoniker": "Entities\\Employer.cs",

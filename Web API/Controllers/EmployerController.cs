@@ -23,6 +23,7 @@ namespace Web_API.Controllers
         {
             try
             {
+
                 var employeers = _repository.GetEmployers();
                 return Ok(employeers);
             }
