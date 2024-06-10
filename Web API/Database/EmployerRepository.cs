@@ -4,7 +4,7 @@ using Npgsql;
 using NpgsqlTypes;
 using Web_API.Entities; // Make sure to include this namespace for the Employer model
 
-public class EmployeRepository : BaseRepository, IEmployerRepository
+public class EmployerRepository : BaseRepository, IEmployerRepository
 {
     private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
     // Get a list of employers
@@ -24,7 +24,7 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
                 {
                    
                     var employer = new Employer
-                    {
+                    { 
                         Id = Convert.ToInt32(data["id"]),
                         FirstName = data["first_name"].ToString(),
                         LastName = data["last_name"].ToString(),
@@ -57,8 +57,8 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
                 var employer = new Employer
                 {
                     Id = Convert.ToInt32(data["id"]),
-                    FirstName = data["firstname"].ToString(),
-                    LastName = data["lastname"].ToString(),
+                    FirstName = data["first_name"].ToString(),
+                    LastName = data["last_name"].ToString(),
                     Organisation = data["organisation"].ToString(),
                     Email = data["email"].ToString()
                 };
@@ -76,10 +76,10 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
             var cmd = dbConn.CreateCommand();
-            cmd.CommandText = @"insert into employer(firstname, lastname, organisation, email) values(@firstname, @lastname, @organisation, @email)";
+            cmd.CommandText = @"insert into employer(first_name, last_name, organisation, email) values(@first_name, @last_name, @organisation, @email)";
 
-            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, employer.FirstName);
-            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, employer.LastName);
+            cmd.Parameters.AddWithValue("@first_name", NpgsqlDbType.Text, employer.FirstName);
+            cmd.Parameters.AddWithValue("@last_name", NpgsqlDbType.Text, employer.LastName);
             cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, employer.Organisation);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, employer.Email);
 
@@ -93,15 +93,16 @@ public class EmployeRepository : BaseRepository, IEmployerRepository
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
             var cmd = dbConn.CreateCommand();
-            cmd.CommandText = @"update employer set firstname=@firstname, lastname=@lastname, organisation=@organisation, email=@email where id=@id";
+            cmd.CommandText = @"update employer set first_name=@first_name, last_name=@last_name, organisation=@organisation, email=@email where id=@id";
 
-            cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, employer.FirstName);
-            cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, employer.LastName);
+            cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, employer.Id);
+            cmd.Parameters.AddWithValue("@first_name", NpgsqlDbType.Text, employer.FirstName);
+            cmd.Parameters.AddWithValue("@last_name", NpgsqlDbType.Text, employer.LastName);
             cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, employer.Organisation);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, employer.Email);
-            cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, employer.Id);
 
-            return UpdateData(dbConn, cmd);
+            bool result = UpdateData(dbConn, cmd);
+            return result;
         }
     }
 

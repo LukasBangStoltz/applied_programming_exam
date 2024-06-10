@@ -6,35 +6,35 @@ namespace Web_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class EmployeerController : ControllerBase
+    public class EmployerController : ControllerBase
     {
-        private readonly ILogger<EmployeerController> _logger;
+        private readonly ILogger<EmployerController> _logger;
         private readonly IEmployerRepository _repository; // Assuming the repository is called EmployerRepository
 
-        public EmployeerController(ILogger<EmployeerController> logger, IEmployerRepository repository)
+        public EmployerController(ILogger<EmployerController> logger, IEmployerRepository repository)
         {
             _logger = logger;
             _repository = repository;
         }
 
-        // GET: Employeer/
+        // GET: Employer/
         [HttpGet]
         public ActionResult<List<Employer>> GetAllEmployers()
         {
             try
             {
 
-                var employeers = _repository.GetEmployers();
-                return Ok(employeers);
+                var employers = _repository.GetEmployers();
+                return Ok(employers);
             }
             catch (Exception ex)
             {
-                _logger.LogError("Failed to get employeers: {Message}", ex.Message);
+                _logger.LogError("Failed to get employers: {Message}", ex.Message);
                 return StatusCode(500, "Internal server error");
             }
         }
 
-        // GET: Employeer/{id}
+        // GET: Employer/{id}
         [HttpGet("{id}")]
         public ActionResult<Employer> GetEmployerById(int id)
         {
@@ -49,12 +49,12 @@ namespace Web_API.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("Failed to get employeer: {Message}", ex.Message);
+                _logger.LogError("Failed to get employer: {Message}", ex.Message);
                 return StatusCode(500, "Internal server error");
             }
         }
 
-        // POST: Employeer/
+        // POST: Employer/
         [HttpPost]
         public ActionResult CreateEmployer([FromBody] Employer employer)
         {
@@ -64,40 +64,41 @@ namespace Web_API.Controllers
                 {
                     return StatusCode(201, "Created");
                 }
-                return BadRequest("Failed to create employeer");
+                return BadRequest("Failed to create employer");
             }
             catch (Exception ex)
             {
-                _logger.LogError("Failed to create employeer: {Message}", ex.Message);
+                _logger.LogError("Failed to create employer: {Message}", ex.Message);
                 return StatusCode(500, "Internal server error");
             }
         }
 
-        // PUT: Employeer/{id}
-        [HttpPut("{id}")]
-        public ActionResult UpdateEmployer(int id, [FromBody] Employer employer)
+    
+        // PUT api/values/5
+        [HttpPut()]
+        public ActionResult UpdateEmployer([FromBody] Employer employer)
         {
-            if (employer.Id != id)
+            if (employer == null)
             {
-                return BadRequest("ID mismatch");
+                return BadRequest("Employer info not correct");
             }
 
-            try
+            Employer existinEmployer = _repository.GetEmployerById(employer.Id);
+            if (existinEmployer == null)
             {
-                if (_repository.UpdateEmployer(employer))
-                {
-                    return NoContent();
-                }
-                return NotFound();
+                return NotFound($"Employer with id {employer.Id} not found");
             }
-            catch (Exception ex)
+
+            bool status = _repository.UpdateEmployer(employer);
+            if (status)
             {
-                _logger.LogError("Failed to update employer: {Message}", ex.Message);
-                return StatusCode(500, "Internal server error");
+                return Ok();
             }
+
+            return BadRequest("Something went wrong");
         }
 
-        // DELETE: Employeer/{id}
+        // DELETE: Employer/{id}
         [HttpDelete("{id}")]
         public ActionResult DeleteEmployer(int id)
         {

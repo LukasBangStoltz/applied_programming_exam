@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj": {}
+    "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj": {}
   },
   "projects": {
-    "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj": {
+    "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj",
+        "projectUniqueName": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj",
         "projectName": "Web API",
-        "projectPath": "C:\\API\\applied_programming_exam\\Web API\\Web API.csproj",
-        "packagesPath": "C:\\Users\\Lukas.StoltzAndersen\\.nuget\\packages\\",
-        "outputPath": "C:\\API\\applied_programming_exam\\Web API\\obj\\",
+        "projectPath": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj",
+        "packagesPath": "/Users/sillemarievesterby/.nuget/packages/",
+        "outputPath": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lukas.StoltzAndersen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/sillemarievesterby/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -78,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     }
