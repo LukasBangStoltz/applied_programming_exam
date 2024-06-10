@@ -62,7 +62,7 @@ namespace Web_API.Controllers
             {
                 if (_repository.InsertEmployer(employer))
                 {
-                    return StatusCode(201, "Created");
+                    return StatusCode(201, new { message = "Created" });
                 }
                 return BadRequest("Failed to create employer");
             }
@@ -106,7 +106,7 @@ namespace Web_API.Controllers
             {
                 if (_repository.DeleteEmployer(id))
                 {
-                    return NoContent();
+                    return StatusCode(201, new { message = "Deleted" });
                 }
                 return NotFound();
             }
