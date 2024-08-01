@@ -9,6 +9,7 @@ namespace Web_API.Entities
         public string Type { get; set; }
         public string Organisation { get; set; }
         public string Email { get; set; }
+        public int EmployerId { get; set; }
     }
 }
 

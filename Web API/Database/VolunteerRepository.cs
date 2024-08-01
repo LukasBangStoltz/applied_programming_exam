@@ -29,7 +29,6 @@ public class VolunteerRepository : BaseRepository, IVolunteerRepository
                         FirstName = data["first_name"].ToString(),
                         LastName = data["last_name"].ToString(),
                         Email = data["email"].ToString(),
-                        Age = Convert.ToInt32(data["age"]),
                         FieldOfInterest = data["field_of_interest"].ToString()
 
 
@@ -61,7 +60,6 @@ public class VolunteerRepository : BaseRepository, IVolunteerRepository
                     FirstName = data["first_name"].ToString(),
                     LastName = data["last_name"].ToString(),
                     Email = data["email"].ToString(),
-                    Age = Convert.ToInt32(data["age"]),
                     FieldOfInterest = data["field_of_interest"].ToString()
                 };
 
@@ -78,11 +76,10 @@ public class VolunteerRepository : BaseRepository, IVolunteerRepository
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
             var cmd = dbConn.CreateCommand();
-            cmd.CommandText = @"INSERT INTO volunteer(first_name, last_name, email, age, field_of_interest) VALUES(@firstname, @lastname, @email, @age, @fieldofinterest)";
+            cmd.CommandText = @"INSERT INTO volunteer(first_name, last_name, email, field_of_interest) VALUES(@firstname, @lastname, @email, @fieldofinterest)";
             cmd.Parameters.AddWithValue("@firstname", NpgsqlDbType.Text, volunteer.FirstName);
             cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, volunteer.LastName);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, volunteer.Email);
-            cmd.Parameters.AddWithValue("@age", NpgsqlDbType.Integer, volunteer.Age);
             cmd.Parameters.AddWithValue("@fieldofinterest", NpgsqlDbType.Text, volunteer.FieldOfInterest);
 
             return InsertData(dbConn, cmd);
@@ -102,7 +99,6 @@ public class VolunteerRepository : BaseRepository, IVolunteerRepository
             cmd.Parameters.AddWithValue("@lastname", NpgsqlDbType.Text, volunteer.LastName);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, volunteer.Email);
             cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, volunteer.Id);
-            cmd.Parameters.AddWithValue("@age", NpgsqlDbType.Text, volunteer.Age);
             cmd.Parameters.AddWithValue("@field_of_interest", NpgsqlDbType.Text, volunteer.FieldOfInterest);
 
             return UpdateData(dbConn, cmd);

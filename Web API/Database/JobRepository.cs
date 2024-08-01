@@ -33,7 +33,9 @@ public class JobRepository : BaseRepository, IJobRepository
                         Title = data["title"].ToString(),
                         Type = data["type"].ToString(),
                         Organisation = data["organisation"].ToString(),
-                        Email = data["email"].ToString()
+                        Email = data["email"].ToString(),
+                        EmployerId = Convert.ToInt32(data["employer_id"]),
+
                     };
 
                     jobs.Add(job);
@@ -64,7 +66,8 @@ public class JobRepository : BaseRepository, IJobRepository
                     Title = data["title"].ToString(),
                     Type = data["type"].ToString(),
                     Organisation = data["organisation"].ToString(),
-                    Email = data["email"].ToString()
+                    Email = data["email"].ToString(),
+                    EmployerId = Convert.ToInt32(data["employer_id"]),
                 };
 
                 return job;
@@ -80,12 +83,13 @@ public class JobRepository : BaseRepository, IJobRepository
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
             var cmd = dbConn.CreateCommand();
-            cmd.CommandText = @"insert into job(type, title, organisation, email) values(@type, @title, @organisation, @email)";
+            cmd.CommandText = @"insert into job(type, title, organisation, email, employer_id) values(@type, @title, @organisation, @email, @employer_id)";
 
             cmd.Parameters.AddWithValue("@type", NpgsqlDbType.Text, job.Type);
             cmd.Parameters.AddWithValue("@title", NpgsqlDbType.Text, job.Title);
             cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, job.Organisation);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, job.Email);
+            cmd.Parameters.AddWithValue("@employer_id", NpgsqlDbType.Integer, job.EmployerId);
 
             return InsertData(dbConn, cmd);
         }
@@ -97,13 +101,15 @@ public class JobRepository : BaseRepository, IJobRepository
         using (var dbConn = new NpgsqlConnection(ConnectionString))
         {
             var cmd = dbConn.CreateCommand();
-            cmd.CommandText = @"update job set type=@type, title=@title, organisation=@organisation, email=@email where id=@id";
+            cmd.CommandText = @"update job set type=@type, title=@title, organisation=@organisation, email=@email, employer_id=@employer_id where id=@id";
 
             cmd.Parameters.AddWithValue("@type", NpgsqlDbType.Text, job.Type);
             cmd.Parameters.AddWithValue("@title", NpgsqlDbType.Text, job.Title);
             cmd.Parameters.AddWithValue("@organisation", NpgsqlDbType.Text, job.Organisation);
             cmd.Parameters.AddWithValue("@email", NpgsqlDbType.Text, job.Email);
             cmd.Parameters.AddWithValue("@id", NpgsqlDbType.Integer, job.Id);
+            cmd.Parameters.AddWithValue("@employer_id", NpgsqlDbType.Integer, job.EmployerId);
+
 
             return UpdateData(dbConn, cmd);
         }

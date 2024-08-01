@@ -62,7 +62,7 @@ namespace Web_API.Controllers
             {
                 if (_repository.InsertJob(job))
                 {
-                    return StatusCode(201, "Created");
+                    return StatusCode(201, new { message = "Created" });
                 }
                 return BadRequest("Failed to create employeer");
             }
