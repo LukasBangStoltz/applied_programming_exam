@@ -77,3 +77,42 @@ C:/API/applied_programming_exam/Web API/obj/Debug/net6.0/ref/Web API.dll
 /Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/obj/Debug/net6.0/Web API.pdb
 /Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/obj/Debug/net6.0/Web API.genruntimeconfig.cache
 /Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/obj/Debug/net6.0/ref/Web API.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\appsettings.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Web API.exe
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Web API.deps.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Web API.runtimeconfig.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Web API.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Web API.pdb
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Npgsql.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.csproj.AssemblyReference.cache
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.AssemblyInfoInputs.cache
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.AssemblyInfo.cs
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.csproj.CoreCompileInputs.cache
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets\msbuild.Web API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets\msbuild.build.Web API.props
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Web API.props
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Web API.props
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\scopedcss\bundle\Web API.styles.css
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.csproj.CopyComplete
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\refint\Web API.dll
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.pdb
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\Web API.genruntimeconfig.cache
+C:\Users\lukas\Desktop\applied_programming_exam\applied_programming_exam\Web API\obj\Debug\net6.0\ref\Web API.dll

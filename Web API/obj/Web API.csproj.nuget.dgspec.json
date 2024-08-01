@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj": {}
+    "C:\\Users\\lukas\\Desktop\\applied_programming_exam\\applied_programming_exam\\Web API\\Web API.csproj": {}
   },
   "projects": {
-    "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj": {
+    "C:\\Users\\lukas\\Desktop\\applied_programming_exam\\applied_programming_exam\\Web API\\Web API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\applied_programming_exam\\applied_programming_exam\\Web API\\Web API.csproj",
         "projectName": "Web API",
-        "projectPath": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/Web API.csproj",
-        "packagesPath": "/Users/sillemarievesterby/.nuget/packages/",
-        "outputPath": "/Users/sillemarievesterby/Desktop/ProgrammingExam/applied_programming_exam/Web API/obj/",
+        "projectPath": "C:\\Users\\lukas\\Desktop\\applied_programming_exam\\applied_programming_exam\\Web API\\Web API.csproj",
+        "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukas\\Desktop\\applied_programming_exam\\applied_programming_exam\\Web API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sillemarievesterby/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.315/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

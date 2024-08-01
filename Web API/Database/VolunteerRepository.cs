@@ -7,7 +7,7 @@ using Web_API.Entities; // Correctly included for the Volunteer model
 
 public class VolunteerRepository : BaseRepository, IVolunteerRepository
 {
-    private const string ConnectionString = "Host=localhost;Port=5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
+    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=P@r1s2027!;Database=postgres";
 
     // Get a list of volunteers
     public List<Volunteer> GetVolunteers()

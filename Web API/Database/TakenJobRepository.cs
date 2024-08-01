@@ -9,7 +9,7 @@ using static Web_API.Entities.TakenJob;
 
 public class TakenJobRepository : BaseRepository, ITakenJobRepository
 {
-    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
+    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=P@r1s2027!;Database=postgres";
 
     public List<TakenJob> GetTakenJob()
     {

@@ -6,7 +6,7 @@ using Web_API.Entities; // Make sure to include this namespace for the Employer 
 
 public class EmployerRepository : BaseRepository, IEmployerRepository
 {
-    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
+    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=P@r1s2027!;Database=postgres";
     // Get a list of employers
     public List<Employer> GetEmployers()
     {

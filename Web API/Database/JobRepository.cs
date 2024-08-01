@@ -7,7 +7,7 @@ using Web_API.Entities; // Make sure to include this namespace for the Job model
 
 public class JobRepository : BaseRepository, IJobRepository
 {
-    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=Liverpool999;Database=ExamDatabase";
+    private const string ConnectionString = "Host=localhost:5432;Username=postgres;Password=P@r1s2027!;Database=postgres";
 
     public object TakenJobs { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

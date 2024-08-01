@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Web_API.Entities; // Make sure the Job class is referenced
 using System.Linq;
-using static Web_API.Entities.TakenJob;
 
 namespace Web_API.Controllers
 {
@@ -10,9 +9,9 @@ namespace Web_API.Controllers
     public class JobController : ControllerBase
     {
         private readonly ILogger<JobController> _logger;
-        private readonly JobRepository _repository; // Assuming the repository is called JobRepository
+        private readonly IJobRepository _repository; // Assuming the repository is called JobRepository
 
-        public JobController(ILogger<JobController> logger, JobRepository repository)
+        public JobController(ILogger<JobController> logger, IJobRepository repository)
         {
             _logger = logger;
             _repository = repository;
